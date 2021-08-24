@@ -1,0 +1,45 @@
+/*Side bar navigation */
+.main-sidebar {
+   position: fixed;
+
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.content-wrapper {
+    margin-left: 230px;
+    margin-right: 230px;
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.flex-column {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+}
+
+
