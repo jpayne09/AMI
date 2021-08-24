@@ -1,45 +1,55 @@
-/*Side bar navigation */
-.main-sidebar {
-   position: fixed;
+/* Style the sidebar */
 
-}
-
-.sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}
-
-.container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-.content-wrapper {
-    margin-left: 230px;
-    margin-right: 230px;
-}
-
-.sidebar-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 48px;
-    height: calc(100vh - 48px);
-    padding-top: .5rem;
+.sidebar {
+    height: 100%;
+    width: 168px;
+    position: fixed;
+    background-color: #111;
     overflow-x: hidden;
-    overflow-y: auto;
+    padding-top: 16px;
 }
 
-.flex-column {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-    -ms-flex-direction: column !important;
-    flex-direction: column !important;
-}
+/* Style sidebar links */
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
 
 
+  /* Body header*/
+  .body-header {
+    position: relative;
+    padding: 15px 15px 0;
+    padding-bottom: 5px;
+    padding-left: 170px;
+    }
+
+    .body-header > h1 {
+        font-size: 24px;
+    }
+
+    .card-header {
+        background-color: #fff;
+    }
+
+    .card-header h5,h4 {
+        color: white;
+    }
+    .bg-teal {
+        background-color: #39cccc !important;
+    }
+
+    

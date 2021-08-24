@@ -2,155 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Boostrap styles-->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Boostrap styles-->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
-    <!--Additional styles-->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>AMI System</title>
+  <!--Additional styles-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <title>AMI System</title>
 </head>
-<header class="sticky-top">
-    <!--Top links-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="sidebar-toggle btn btn-white" href="#" style="color:white" data-toggle="push-menu"
-            role="button"></a>
+
+<body>
+  <div class="page-wrapper">
+    <header class="sticky-top">
+      <!--Top links-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="sidebar-toggle btn btn-white" href="#" style="color:white" data-toggle="push-menu" role="button"></a>
         <a class="navbar-brand" href="#">AMI</a>
 
         <div class="collapse navbar-collapse main-nav" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Documentation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
-    </nav>
-</header>
-<body>
-    <div class="page-wrapper">
-        <!--Side Navigation-->
-        <aside class="main-sidebar">
-            <section class="sidebar">
-                <nav class="bg-light sidebar">
-                    <div class="sidebar-sticky">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Hardware</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">License Information</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </section>
-        </aside>
-        <div>
-            <div class="card-group" style="padding-left:230px;">
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-                <div class="card">
-                  <img class="card-img-top" src="..." alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <!--Recent activity-->
-        <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <table class="table">
-            <thead class="thead-light">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
+      </nav>
+    </header>
+    <!-- The sidebar -->
+    <div class="sidebar">
+      <a href="#home"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+      <a href="#services"><i class="fa fa-fw fa-wrench"></i>Assets</a>
+      <a href="#clients"><i class="fa fa-fw fa-user"></i>Accessories</a>
+      <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Components</a>
     </div>
+
+    <!--Body header-->
+    <div class="body-header">
+      <h1>Dashboard</h1>
+    </div>
+    <!--Body Section-->
+    <div class="main">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card h-100">
+            <div class="card-header d-flex bg-teal">
+              <h5 class="h6 font-weight-semi-body text-uppercase mb-0">Total Assets</h5>
+              <div class="position-relative ml-auto">
+                
+              </div>
+            </div>
+            <div class="card-body bg-teal">
+              <h4>1,400</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header">
+              <h5>Total Licenses</h5>
+            </div>
+            <div class="card-body">
+              <h4>56</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header">
+              <h5>Total Asseccories</h5>
+            </div>
+            <div class="card-body">
+              <h4>56</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header">
+              <h5>Asseccories</h5>
+            </div>
+            <div class="card-body">
+              <h4>56</h4>
+            </div>
+          </div>
+      </div>
+        
+    </div>
+
+  </div>
+
+
+
 </body>
 
 </html>
