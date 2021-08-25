@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Boostrap styles-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!--Additional styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>AMI System</title>
 </head>
+
 <body>
+    <div class="page-wrapper">
+        <!-- The sidebar -->
+        <div class="sidebar">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <span class="fs-4">AMI</span>
+            </a>
+            <hr>
+            <a href="index.html"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+            <a href="assets.html"><i class="fa fa-fw fa-wrench"></i>Asset Entry</a>
+            <a href="hardware.html"><i class="fa fa-fw fa-user"></i>Inventory</a>
+            <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+            <a href="#">Licenses</a>
+            <a href="#">Accesories</a>
+            <a href="#">Components</a>
+            <a href="#">People</a>
+            <a href="#">Admin page</a>
+            <a href="#">Reports</a>
+        </div>
+
+
+        <!--Asset form-->
+        <div class="container">
+            <div class="form-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <div class="form-row">
+                                <label for="AssetTag">Asset Tag</label>
+                                <input type="text" class="form-control" id="assettag" aria-describedby="assettag"
+                                    placeholder="Enter AssetTag">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone
+                                    else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="serialnumberinput">Serial</label>
+                                <input type="text" class="form-control" id="serialnumberinput" placeholder="XXXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="modelinput">Model</label>
+                                <input type="text" class="form-control" id="modelinput" placeholder="XXXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="statusinput">Status</label>
+                                <input type="text" class="form-control" id="statusinput" placeholder="XXXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="assetnameinput">Asset Name</label>
+                                <input type="text" class="form-control" id="assetnameinput" placeholder="XXXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="purchasedateinput">Purchase Date</label>
+                                <input type="text" class="form-control" id="purchasedateinput" placeholder="XXXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="supplierinput">Supplier</label>
+                                <input type="text" class="form-control" id="supplierinput" placeholder="XXXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="ordernumberinput">Order Number</label>
+                                <input type="text" class="form-control" id="ordernumberinput" placeholder="XXXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="purchasecostinput">Purchase Cost</label>
+                                <input type="text" class="form-control" id="purchasecostinput" placeholder="XXXXXXXXX">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" style="margin-left: 20%;">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-muted">© 2021 AMI, Inc</p>
     
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Documentation</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
+              </ul>
+            </footer>
+          </div>
+    </div>
 </body>
+
 </html>

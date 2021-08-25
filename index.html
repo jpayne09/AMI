@@ -16,40 +16,39 @@
 
 <body>
   <div class="page-wrapper">
-    <header class="sticky-top">
-      <!--Top links-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="sidebar-toggle btn btn-white" href="#" style="color:white" data-toggle="push-menu" role="button"></a>
-        <a class="navbar-brand" href="#">AMI</a>
-
-        <div class="collapse navbar-collapse main-nav" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Documentation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </header>
     <!-- The sidebar -->
     <div class="sidebar">
-      <a href="#home"><i class="fa fa-fw fa-home"></i>Dashboard</a>
-      <a href="#services"><i class="fa fa-fw fa-wrench"></i>Assets</a>
-      <a href="#clients"><i class="fa fa-fw fa-user"></i>Accessories</a>
-      <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Components</a>
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <span class="fs-4">AMI</span>
+      </a>
+      <hr>
+      <a href="index.html"><i class="fa fa-fw fa-home"></i>Dashboard</a>
+      <a href="assets.html"><i class="fa fa-fw fa-wrench"></i>Asset Entry</a>
+      <a href="hardware.html"><i class="fa fa-fw fa-user"></i>Inventory</a>
+      <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+      <a href="#">Licenses</a>
+      <a href="#">Accesories</a>
+      <a href="#">Components</a>
+      <a href="#">People</a>
+      <a href="#">Admin page</a>
+      <a href="#">Reports</a>
     </div>
 
+    <!--Top Nav bar-->
+    <nav class="navbar navbar-static-top">
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li>
+            <a>
+              <i class="fa fa-bardcode" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!--Body header-->
+    
     <div class="body-header">
       <h1>Dashboard</h1>
     </div>
@@ -151,13 +150,47 @@
         </div>
       </section>
 
-
+      <section>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header bg-teal">
+                <h5>Main Information</h5>
+              </div>
+              <div class="card-body bg-teal">
+                <h4>56</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header bg-teal">
+                <h5>Main information 2</h5>
+              </div>
+              <div class="card-body bg-teal">
+                <h4>100</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header bg-teal">
+                <h5>Main information 2</h5>
+              </div>
+              <div class="card-body bg-teal">
+                <h4>100</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Footer-->
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <p class="col-md-4 mb-0 text-muted">© 2021 AMI, Inc</p>
 
           <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Documentation</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>

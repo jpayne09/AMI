@@ -1,3 +1,14 @@
+/* Main nav*/
+
+.navbar {
+  transition: margin-left .3s ease-in-out;
+  margin-bottom: 0;
+  margin-left: 200px;
+  border: none;
+  min-height: 50px;
+  border-radius: 0;
+  background-color: #202020;
+}
 /* Style the sidebar */
 
 .sidebar {
@@ -13,7 +24,7 @@
 .sidebar a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     color: #818181;
     display: block;
   }
@@ -22,6 +33,14 @@
   .sidebar a:hover {
     color: #f1f1f1;
   }
+
+  hr {
+    margin: 0;
+    color: inherit;
+    background-color: white;
+    border: 1;
+    opacity: .25;
+}
   
   .main {
     margin-left: 200px; /* Same as the width of the sidenav */
@@ -65,3 +84,25 @@
     .table-responsive {
       max-height: 300px;
     }
+
+
+
+    /* Assets Element - Form */
+
+  .container {
+    padding-top: 25px;
+  }
+
+  .form-group > label {
+    flex-basis:100px
+  }
+  .form-container {
+    margin-left: 25%;
+    margin-right: 15%;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f6f6f6;
+  }
+
+
+  /* Hardware */
