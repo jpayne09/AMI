@@ -7,7 +7,7 @@
   border: none;
   min-height: 50px;
   border-radius: 0;
-  background-color: #202020;
+  background-color: #313a46 !important;
 }
 /* Style the sidebar */
 
@@ -15,7 +15,7 @@
     height: 100%;
     width: 200px;
     position: fixed;
-    background-color: #111;
+    background-color: #313a46 !important;
     overflow-x: hidden;
     padding-top: 16px;
     transition: 0.5s;
@@ -26,8 +26,9 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 15px;
-    color: #818181;
+    color: #8391a2;
     display: block;
+    font-family: "Nunito",sans-serif;
   }
   
   /* Style links on mouse-over */
@@ -55,6 +56,7 @@
   .main {
     margin-left: 200px; /* Same as the width of the sidenav */
     padding: 0px 10px;
+    background-color: #fafafa;
 
   }
 
@@ -67,6 +69,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Nunito",sans-serif;
 }
 .topnav {
   background-color: #333;
@@ -100,7 +103,6 @@ body {
 
   /* Body header*/
   .body-header {
-    position: relative;
     padding: 15px 15px 0;
     padding-bottom: 5px;
     padding-left: 200px;
@@ -111,15 +113,18 @@ body {
         padding-left: 10px;
     }
 
-    .card-header {
-        background-color: #fff;
-    }
+    .card {
+      border: none;
+      box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+      margin-bottom: 24px;
+  }
 
-    .card-header h5,h4 {
-        color: white;
+    .card-body h4, h6 {
+      color:black;
     }
+  
     .bg-teal {
-        background-color: #39cccc !important;
+        background-color: #ffffff !important;
     }
 
     /* Table section*/
