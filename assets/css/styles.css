@@ -7,7 +7,15 @@
   border: none;
   min-height: 50px;
   border-radius: 0;
-  background-color: #313a46 !important;
+  background-color: #ffffff !important;
+}
+
+.navbar-custom {
+  width: 100%;
+}
+
+.nav-icons-right {
+  font-size: 24px;
 }
 /* Style the sidebar */
 
@@ -28,7 +36,7 @@
     font-size: 15px;
     color: #8391a2;
     display: block;
-    font-family: "Nunito",sans-serif;
+    font-family: 'Nunito', sans-serif;  
   }
   
   /* Style links on mouse-over */
@@ -54,17 +62,16 @@
 }
   
   .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
-    padding: 0px 10px;
-    background-color: #fafafa;
-
+     /* Same as the width of the sidenav */
   }
 
   #main {
     transition: margin-left .5s;
-    padding: 20px;
+    padding-left: 220px;
     overflow:hidden;
     width:100%;
+    background-color: #fafbfe;
+
 }
 
 body {
@@ -99,30 +106,46 @@ body {
   color: white;
 }
 
+.navbar input {
+  background-color: #fafbfe;
+  border: 0px;
+}
 
 
   /* Body header*/
   .body-header {
     padding: 15px 15px 0;
-    padding-bottom: 5px;
-    padding-left: 200px;
+    padding-bottom: 20px;
     }
 
     .body-header > h1 {
         font-size: 24px;
         padding-left: 10px;
+        font-family: "Nunito",sans-serif;
+
+    }
+
+    .row > .col > input {
+      background-color: #f1f1f1;
+      border: 0px;
     }
 
     .card {
       border: none;
       box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
       margin-bottom: 24px;
+      
   }
 
     .card-body h4, h6 {
+      font-size: .9375rem;
       color:black;
+      font-family: "Nunito",sans-serif;
     }
   
+    .card-body p {
+      font-size: .9375rem;
+    }
     .bg-teal {
         background-color: #ffffff !important;
     }
@@ -140,6 +163,9 @@ body {
       max-height: 300px;
     }
 
+    .table > tbody {
+      color: #7b7b7b
+    }
 
 
     /* Assets Element - Form */

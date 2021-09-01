@@ -17,15 +17,17 @@
 <body>
     <div class="page-wrapper">
         <!-- The sidebar -->
-        <div class="sidebar">
+        <div class="sidebar" id=sidebarNavigation>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <span class="fs-4">AMI</span>
+                <span class="fs-12">AMI</span>
             </a>
             <hr>
             <a href="index.html"><i class="fa fa-fw fa-home"></i>Dashboard</a>
             <a href="assets.html"><i class="fa fa-fw fa-wrench"></i>Asset Entry</a>
             <a href="hardware.html"><i class="fa fa-fw fa-user"></i>Inventory</a>
-            <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+            <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+            <a href="#">Cloud Resources</a>
             <a href="#">Licenses</a>
             <a href="#">Accesories</a>
             <a href="#">Components</a>
@@ -33,76 +35,132 @@
             <a href="#">Admin page</a>
             <a href="#">Reports</a>
         </div>
+        <!--Top Nav bar-->
+        <nav class="navbar" id=navbar>
+            <div class="navbar-custom">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" onclick="openNav()">
+                            <svg width="30" height="30" id="icoOpen">
+                                <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                                <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                                <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+                            </svg>
+                        </a>
+                        <input type="text" placeholder="Search..."></input>
+                        <span><button class="btn btn-primary">Search</button></span>
+                        <div class="nav-icons-right" style="float: right;">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-
-        <!--Asset form-->
-        <div class="container">
-            <div class="form-container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <form>
-                            <div class="form-row">
-                                <label for="AssetTag">Asset Tag</label>
-                                <input type="text" class="form-control" id="assettag" aria-describedby="assettag"
-                                    placeholder="Enter AssetTag">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
-                                    anyone
-                                    else.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="serialnumberinput">Serial</label>
-                                <input type="text" class="form-control" id="serialnumberinput" placeholder="XXXXXXXXX">
-                            </div>
-                            <div class="form-group">
-                                <label for="modelinput">Model</label>
-                                <input type="text" class="form-control" id="modelinput" placeholder="XXXXXXXXX">
-                            </div>
-                            <div class="form-group">
-                                <label for="statusinput">Status</label>
-                                <input type="text" class="form-control" id="statusinput" placeholder="XXXXXXXXX">
-                            </div>
-                            <div class="form-group">
-                                <label for="assetnameinput">Asset Name</label>
-                                <input type="text" class="form-control" id="assetnameinput" placeholder="XXXXXXXXX">
-                            </div>
-                            <div class="form-group">
-                                <label for="purchasedateinput">Purchase Date</label>
-                                <input type="text" class="form-control" id="purchasedateinput" placeholder="XXXXXXXXX">
-                            </div>
-                            <div class="form-group">
-                                <label for="supplierinput">Supplier</label>
-                                <input type="text" class="form-control" id="supplierinput" placeholder="XXXXXXXXX">
-                            </div>
-                            <div class="form-group">
-                                <label for="ordernumberinput">Order Number</label>
-                                <input type="text" class="form-control" id="ordernumberinput" placeholder="XXXXXXXXX">
-                            </div>
-                            <div class="form-group">
-                                <label for="purchasecostinput">Purchase Cost</label>
-                                <input type="text" class="form-control" id="purchasecostinput" placeholder="XXXXXXXXX">
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
+        <main id="main">
+            <!--Asset form-->
+            <div class="container">
+                <div class="form-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-row">
+                                    <label for="AssetTag">Asset Tag</label>
+                                    <input type="text" class="form-control" id="assettag" aria-describedby="assettag"
+                                        placeholder="Enter AssetTag">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone
+                                        else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="serialnumberinput">Serial</label>
+                                    <input type="text" class="form-control" id="serialnumberinput"
+                                        placeholder="XXXXXXXXX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="modelinput">Model</label>
+                                    <input type="text" class="form-control" id="modelinput" placeholder="XXXXXXXXX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="statusinput">Status</label>
+                                    <input type="text" class="form-control" id="statusinput" placeholder="XXXXXXXXX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="assetnameinput">Asset Name</label>
+                                    <input type="text" class="form-control" id="assetnameinput" placeholder="XXXXXXXXX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="purchasedateinput">Purchase Date</label>
+                                    <input type="text" class="form-control" id="purchasedateinput"
+                                        placeholder="XXXXXXXXX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="supplierinput">Supplier</label>
+                                    <input type="text" class="form-control" id="supplierinput" placeholder="XXXXXXXXX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="ordernumberinput">Order Number</label>
+                                    <input type="text" class="form-control" id="ordernumberinput"
+                                        placeholder="XXXXXXXXX">
+                                </div>
+                                <div class="form-group">
+                                    <label for="purchasecostinput">Purchase Cost</label>
+                                    <input type="text" class="form-control" id="purchasecostinput"
+                                        placeholder="XXXXXXXXX">
+                                </div>
+                                <button onclick="store()" type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="container" style="margin-left: 20%;">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <p class="col-md-4 mb-0 text-muted">© 2021 AMI, Inc</p>
-    
-              <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Documentation</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
-              </ul>
-            </footer>
-          </div>
+
+            <div class="container" style="margin-left: 20%;">
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <p class="col-md-4 mb-0 text-muted">© 2021 AMI, Inc</p>
+
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Documentation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
+                    </ul>
+                </footer>
+            </div>
     </div>
+    </main>
+    <script>
+        function openNav() {
+            document.getElementById("sidebarNavigation").style.width = "200px";
+            document.getElementById("main").style.paddingLeft = "220px";
+            document.getElementById("navbar").style.marginLeft = "200px";
+
+        }
+
+        function closeNav() {
+            document.getElementById("sidebarNavigation").style.width = "0";
+            document.getElementById("main").style.paddingLeft = "20px";
+            document.getElementById("navbar").style.marginLeft = "0";
+        }
+
+    </script>
+    <script>
+        function store() {
+            var inputAssetTag = document.getElementById("assettag");
+            var serialnumberinput = document.getElementById("serialnumberinput");
+            var modelinput = document.getElementById("modelinput");
+             test1 = [{"AssetName": inputAssetTag.value,"SerialNumber": serialnumberinput.value,"ModelInput": modelinput.value}];
+            //localStorage.setItem("assettag", inputAssetTag.value);
+            localStorage.setItem('test1', JSON.stringify(test1));
+             }
+        function getStore(){
+            var tag = localStorage.getItem("assettag");
+        }
+    </script>
+
+
 </body>
 
 </html>
