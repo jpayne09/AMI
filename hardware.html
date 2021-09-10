@@ -51,12 +51,16 @@
                         <span><button class="btn btn-primary" onclick="display()">Search</button></span>
                         <div class="nav-icons-right" style="float: right;">
                             <i class="fa fa-cog" aria-hidden="true"></i>
-                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                            <a role="button" data-toggle="modal" data-target="#loginModal">
+                                <i class="fa fa-sign-in"></i>
+                            </a>
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        
         <main id="main">
             <div class="container">
                 <!--Table section-->
@@ -90,12 +94,6 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody">
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mouse</td>
-                                    <td>update</td>
-                                    <td>Keyboard</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
