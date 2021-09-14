@@ -157,21 +157,22 @@
                 </div>
             </div>
 
-            <div class="container" style="margin-left: 20%;">
+            <div class="container">
                 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                     <p class="col-md-4 mb-0 text-muted">© 2021 AMI, Inc</p>
 
-                    <ul class="nav col-md-4 justify-content-end">
+                    <ul class="nav col-md-6 justify-content-end">
                         <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
                         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Documentation</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">#</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Support</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
                     </ul>
                 </footer>
             </div>
     </div>
     </main>
+    <!--Scripts-->
     <script>
         function openNav() {
             document.getElementById("sidebarNavigation").style.width = "200px";
@@ -192,17 +193,31 @@
             var inputAssetTag = document.getElementById("assettag");
             var serialnumberinput = document.getElementById("serialnumberinput");
             var modelinput = document.getElementById("modelinput");
+            var statusinput = document.getElementById("statusinput")
+            var assetnameinput = document.getElementById("assetnameinput");
+            var purchasedateinput = document.getElementById("purchasedateinput");
+            var supplierinput = document.getElementById("supplierinput");
+            var ordernumberinput = document.getElementById("ordernumberinput");
+            var purchasecostinput = document.getElementById("purchasecostinput");
 
+            
             var oldItems = JSON.parse(localStorage.getItem('test1'));
-            newItem = [{"AssetName": inputAssetTag.value,"SerialNumber": serialnumberinput.value,"ModelInput": modelinput.value}];
-            //localStorage.setItem("assettag", inputAssetTag.value);
-            oldItems.push(newItem);
-            localStorage.setItem('test1', JSON.stringify(oldItems));
+            if(oldItems == null){
+                test1 = [{"AssetTag": inputAssetTag.value,"SerialNumber": serialnumberinput.value,"Modelinput": modelinput.value,"Statusinput":statusinput.value,
+                "AssetName": assetnameinput.value,"PurchaseDate": purchasedateinput.value,"Supplier":supplierinput.value,"OrderNum":ordernumberinput.value,
+                "PurchaseCost":purchasecostinput.value}];
+                localStorage.setItem('test1', JSON.stringify(test1));
+            }else{
+                newItem = [{"AssetTag": inputAssetTag.value,"SerialNumber": serialnumberinput.value,"ModelInput": modelinput.value,"StatusInput":statusinput.value,
+                "AssetName": assetnameinput.value,"Purchase Date": purchasedateinput.value,"Supplier":supplierinput.value,"Order Num":ordernumberinput.value,
+                "Purchase Cost":purchasecostinput.value}];
+                oldItems.push(newItem[0]);
+                localStorage.setItem('test1', JSON.stringify(oldItems));
+            }
+  
              
         }
-        function getStore(){
-            var tag = localStorage.getItem("assettag");
-        }
+       
     </script>
 
 

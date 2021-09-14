@@ -36,7 +36,7 @@
     font-size: 15px;
     color: #8391a2;
     display: block;
-    font-family: 'Nunito', sans-serif;  
+    font-family: sans-serif;  
   }
   
   /* Style links on mouse-over */
@@ -139,7 +139,7 @@ body {
 
     .card-body h4, h6 {
       font-size: .9375rem;
-      color:black;
+      color:#6c757d;
       font-family: "Nunito",sans-serif;
     }
   
@@ -157,6 +157,7 @@ body {
     }
     .main-table {
       margin-top: 100px;
+      margin-bottom: 100px;
     }
 
     .table-responsive {

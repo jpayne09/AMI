@@ -30,12 +30,25 @@ function setInfo(){
     var tbody = document.getElementById('tbody');
     
     for (var i = 0; i < retrievedObject.length; i++) {
-      var tr = "<tr>";
-      tr += "<td>" + retrievedObject[i].AssetName + "</td>";
-      tr += "<td>" + retrievedObject[i].SerialNumber + "</td>>";
-      tr += "<td>" + retrievedObject[i].modelinput + "</td>";
-      tr += "<td>" + retrievedObject[i].Serial + "</td>";
-      tbody.innerHTML += tr;
-      "</tr>";
+    //   var tr = "<tr>";
+    //   tr += "<td>" + retrievedObject[i].AssetName + "</td>";
+    //   tr += "<td>" + retrievedObject[i].SerialNumber + "</td>>";
+    //   tr += "<td>" + retrievedObject[i].modelinput + "</td>";
+    //   tr += "<td>" + retrievedObject[i].Serial + "</td>";
+    //   tbody.innerHTML += tr;
+    //   "</tr>";
+
+      $("#productTable tbody").append("<tr>" +
+       "<td>" + retrievedObject[i].AssetTag + "</td>"+
+       "<td>" + retrievedObject[i].SerialNumber + "</td>>"+
+        "<td>" + retrievedObject[i].modelinput + "</td>"+
+        "<td>" + retrievedObject[i].statusinput + "</td>"+
+        "<td>" + retrievedObject[i].AssetName + "</td>" +
+        "<td>" + retrievedObject[i].PurchaseDate + "</td>" +
+        "<td>" + retrievedObject[i].Supplier + "</td>" +
+        "<td>" + retrievedObject[i].OrderNum + "</td>" +
+        "<td>" + retrievedObject[i].PurchasedCost + "</td>"+
+      "</tr>");
+      
     }
 }
